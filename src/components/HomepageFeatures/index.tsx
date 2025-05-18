@@ -11,32 +11,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Tài liệu toàn diện',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Tổng hợp kiến thức và tài liệu luyện thi từ các trường THCS chuyên hàng đầu như Trần Đại Nghĩa, Trần Quốc Toản.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Kỹ năng thực hành',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Phát triển các kỹ năng thực hành quan trọng: thuyết trình, trình bày ý kiến, làm việc nhóm, sáng tạo và tư duy logic.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Lộ trình khoa học',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Lộ trình ôn tập có hệ thống từ cơ bản đến nâng cao, kèm đề thi thử và hướng dẫn giải chi tiết.
       </>
     ),
   },

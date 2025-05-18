@@ -5,8 +5,8 @@ import { themes } from 'prism-react-renderer';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'stepup6',
-  tagline: 'Dinosaurs are cool',
+  title: 'StepUp6',
+  tagline: 'Bộ tài liệu luyện thi toàn diện vào lớp 6 trường chuyên',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -17,8 +17,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'stepup6', // Usually your repo name.
+  organizationName: 'tuanpmt', // Usually your GitHub org/user name.
+  projectName: 'stepup6.com', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -31,8 +31,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'vi',
+    locales: ['vi'],
   },
 
   presets: [
@@ -44,7 +44,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/tuanpmt/stepup6.com/tree/master/',
         },
         blog: false,
         theme: {
@@ -69,9 +69,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'stepup6',
+      title: 'StepUp6',
       logo: {
-        alt: 'stepup6 Logo',
+        alt: 'StepUp6 Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -79,10 +79,10 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Tài liệu',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/tuanpmt/stepup6.com',
           label: 'GitHub',
           position: 'right',
         },
@@ -92,42 +92,54 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Tài liệu',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Giới thiệu',
               to: '/docs/intro',
             },
+            {
+              label: 'Đọc hiểu',
+              to: '/docs/exam_preparation/1_Reading_Comprehension',
+            },
+            {
+              label: 'Toán và Logic',
+              to: '/docs/exam_preparation/2_Math_and_Logic',
+            },
+            {
+              label: 'Kỹ năng thực hành',
+              to: '/docs/exam_preparation/5_Practical_Skills',
+            },
           ],
         },
         {
-          title: 'Community',
+          title: 'Đề thi',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Trần Đại Nghĩa',
+              to: '/docs/exams/tran-dai-nghia',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Trần Quốc Toản',
+              to: '/docs/exams/tran-quoc-toan',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Đề thi thử',
+              to: '/docs/exam_preparation/6_Full_Mock_Exams',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Liên hệ',
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/tuanpmt/stepup6.com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} stepup6. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} StepUp6. Built with Docusaurus.`,
     },
     prism: {
       theme: themes.github,
