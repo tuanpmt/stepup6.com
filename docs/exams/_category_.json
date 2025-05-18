@@ -1,0 +1,9 @@
+{
+  "label": "Exams by School",
+  "link": {
+    "type": "generated-index",
+    "title": "Exams & Resources by School",
+    "description": "Collection of exam papers and solutions organized by school and year."
+  },
+  "position": 4
+} 
