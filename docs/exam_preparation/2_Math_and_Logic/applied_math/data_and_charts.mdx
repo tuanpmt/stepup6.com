@@ -55,18 +55,15 @@ Trong đề thi tuyển sinh lớp 6 THCS chuyên, học sinh thường gặp c�
 - Trung bình = \((43 + 44 + 45,5 + 46)/4\) = **44,625** triệu tấn.  
 - Tăng % = \((46 - 43)/43\) × 100% ≈ **6,98 %**.
 
-### Minh hoạ bằng Mermaid
+### Minh hoạ 
 
 ```mermaid
 %%{init: { 'theme': 'base' } }%%
-barChart
-    title Số sách bán theo quý năm 2024
-    x-axis Quý
-    y-axis Số sách
-    Q1 : 350
-    Q2 : 420
-    Q3 : 500
-    Q4 : 430
+xychart-beta
+    title "Số sách bán theo quý năm 2024"
+    x-axis "Quý" ["Q1", "Q2", "Q3", "Q4"]
+    y-axis "Số sách" 0 --> 600
+    bar [350, 420, 500, 430]
 ```
 
 ```mermaid

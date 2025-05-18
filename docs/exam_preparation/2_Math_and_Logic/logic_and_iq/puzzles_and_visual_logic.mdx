@@ -224,25 +224,160 @@ flowchart TB
 
 ![Đếm hình tam giác](/img/logic_and_iq/triangle_example.svg)
 
+<details>
+<summary>Đáp án và hướng dẫn</summary>
+
+**Đáp án: 13 hình tam giác**
+
+**Cách giải:**
+1. Phân loại các tam giác theo kích thước và vị trí:
+   - Tam giác nhỏ phía trên trái: 1 hình
+   - Tam giác nhỏ phía trên phải: 1 hình
+   - Tam giác nhỏ phía dưới trái: 1 hình
+   - Tam giác nhỏ phía dưới phải: 1 hình
+   - Tam giác nhỏ ở giữa phía dưới trái: 1 hình
+   - Tam giác nhỏ ở giữa phía dưới phải: 1 hình
+   - Tam giác vừa phía trái (gồm 2 tam giác nhỏ): 1 hình
+   - Tam giác vừa phía phải (gồm 2 tam giác nhỏ): 1 hình
+   - Tam giác vừa phía trên (phần trên của tam giác lớn): 1 hình
+   - Tam giác vừa phía dưới trái: 1 hình
+   - Tam giác vừa phía dưới phải: 1 hình
+   - Tam giác lớn phía dưới (phần dưới tam giác lớn): 1 hình
+   - Tam giác lớn cả hình: 1 hình
+
+2. Kỹ thuật đếm:
+   - Bắt đầu từ các tam giác nhỏ nhất, rõ ràng nhất
+   - Tiếp tục với các tam giác được tạo bởi việc kết hợp các tam giác nhỏ
+   - Kết thúc với các tam giác lớn nhất
+
+3. Để tránh bỏ sót, đánh dấu các tam giác đã đếm bằng cách đánh số từ 1-13.
+</details>
+
 ### Bài tập 2: Tìm quy luật
 Tìm hình tiếp theo trong dãy:
 
 ![Tìm quy luật dãy hình](/img/logic_and_iq/pattern_sequence.svg)
+
+<details>
+<summary>Đáp án và hướng dẫn</summary>
+
+**Đáp án: □■□■□**
+
+**Cách giải:**
+1. Quan sát quy luật trong dãy:
+   - Hình 1: □ (một hình vuông trắng)
+   - Hình 2: ■ (một hình vuông đen)
+   - Hình 3: □■ (một hình vuông trắng và một hình vuông đen)
+   - Hình 4: ■□■ (hình vuông đen, trắng, đen)
+
+2. Phân tích quy luật:
+   - Quy luật về số lượng hình vuông: 1, 1, 2, 3, ... → Số lượng tăng theo dãy Fibonacci (1,1,2,3,5,...)
+   - Quy luật về màu sắc: Bắt đầu với trắng, sau đó đen, rồi xen kẽ trắng-đen
+
+3. Dự đoán hình tiếp theo:
+   - Số lượng hình vuông: 5 (tiếp theo trong dãy Fibonacci)
+   - Màu sắc: Tiếp tục xen kẽ, bắt đầu với trắng (vì hình trước kết thúc với đen)
+   
+4. Vậy hình tiếp theo là: □■□■□ (chuỗi 5 hình vuông xen kẽ trắng-đen bắt đầu với trắng)
+</details>
 
 ### Bài tập 3: Tìm hình khác biệt
 Tìm hình khác với nhóm:
 
 ![Tìm hình khác biệt](/img/logic_and_iq/odd_one_out.svg)
 
+<details>
+<summary>Đáp án và hướng dẫn</summary>
+
+**Đáp án: D. ◮ (Hình mũi tên)**
+
+**Cách giải:**
+1. Phân tích đặc điểm của các hình:
+   - Hình A: Tam giác đặc, hướng lên
+   - Hình B: Tam giác rỗng, hướng lên
+   - Hình C: Tam giác rỗng, hướng xuống
+   - Hình D: Hình mũi tên rỗng (không phải tam giác)
+
+2. Tìm đặc điểm chung của đa số:
+   - Hình A, B, C đều là tam giác (có 3 cạnh, 3 góc)
+   - Hình D không phải tam giác (có nhiều hơn 3 cạnh)
+
+3. Phân tích phương pháp loại trừ:
+   - Nếu xét về màu sắc: A khác (đặc), B và C giống nhau (rỗng)
+   - Nếu xét về hướng: C khác (hướng xuống), A và B giống nhau (hướng lên)
+   - Nếu xét về hình dạng cơ bản: D khác (không phải tam giác), A, B, C giống nhau (đều là tam giác)
+
+4. Kết luận: Thuộc tính "hình dạng cơ bản" là thuộc tính quan trọng nhất, và theo đó, D là hình khác biệt vì không phải tam giác như các hình còn lại.
+</details>
+
 ### Bài tập 4: Gập hình
 Khi gập tờ giấy có hình vẽ ⬤ trên góc trái, sẽ được hình nào trong các hình sau?
 
 ![Bài toán gập hình](/img/logic_and_iq/paper_folding.svg)
 
+<details>
+<summary>Đáp án và hướng dẫn</summary>
+
+**Đáp án: B. ⬤ ở góc phải dưới**
+
+**Cách giải:**
+1. Phân tích vị trí ban đầu:
+   - Tờ giấy hình chữ nhật có kích thước dài hơn rộng
+   - Điểm tròn đen nằm ở góc trên bên trái
+   - Đường gập theo đường chéo từ góc trên bên trái đến góc dưới bên phải
+
+2. Xác định quy luật gập:
+   - Khi gập, nửa tờ giấy bên phải được gập lên trên, đè lên nửa bên trái
+   - Góc trên bên trái (có điểm tròn) sẽ được gập đến vị trí góc dưới bên phải
+   - Hình chữ nhật sau khi gập sẽ trở thành hình vuông
+
+3. Áp dụng quy luật:
+   - Điểm tròn đen ban đầu ở góc trên bên trái
+   - Sau khi gập theo đường chéo, điểm tròn đen sẽ nằm ở góc phải dưới của hình vuông
+
+4. Từ 4 lựa chọn A, B, C, D, chỉ có phương án B có điểm tròn ở góc phải dưới, phù hợp với kết quả sau khi gập.
+</details>
+
 ### Bài tập 5: Lắp ghép hình
 Ba mảnh ghép nào dưới đây có thể ghép lại thành hình vuông hoàn chỉnh?
 
 ![Bài toán lắp ghép hình](/img/logic_and_iq/puzzle_pieces.svg)
+
+<details>
+<summary>Đáp án và hướng dẫn</summary>
+
+**Đáp án: Mảnh 1 + 2 + 4 và Mảnh 3 + 4 + 5**
+
+**Cách giải:**
+1. Phân tích các mảnh ghép:
+   - Mảnh 1: Tam giác vuông nhỏ (màu xanh nhạt)
+   - Mảnh 2: Tam giác vuông lớn (màu xanh lá)
+   - Mảnh 3: Hình chữ nhật (màu hồng)
+   - Mảnh 4: Tam giác vuông ngược (màu vàng nhạt)
+   - Mảnh 5: Hình thang (màu tím nhạt)
+
+2. Phương pháp thử:
+   - Cần 3 mảnh ghép tạo thành hình vuông
+   - Hình vuông cần có 4 góc vuông và 4 cạnh bằng nhau
+
+3. Kết quả thử nghiệm:
+   - Mảnh 1 + 2 + 4: Tạo thành hình vuông hoàn chỉnh
+     + Mảnh 2 (tam giác lớn) tạo nửa hình vuông
+     + Mảnh 1 (tam giác nhỏ) lấp phần góc trên trái
+     + Mảnh 4 (tam giác ngược) lấp phần góc dưới phải
+   
+   - Mảnh 3 + 4 + 5: Tạo thành hình vuông hoàn chỉnh
+     + Mảnh 3 (hình chữ nhật) tạo phần trên của hình vuông
+     + Mảnh 4 (tam giác ngược) lấp phần góc dưới bên trái
+     + Mảnh 5 (hình thang) lấp phần còn lại ở góc dưới bên phải
+
+   - Mảnh 1 + 3 + 4: Không tạo thành hình vuông hoàn chỉnh
+     + Kích thước các mảnh không phù hợp để tạo thành hình vuông
+
+4. Kiểm tra kích thước: Trong cả hai trường hợp tạo được hình vuông, các cạnh đều bằng nhau và tạo thành 4 góc vuông.
+
+5. Kết luận: Có 2 cách ghép tạo thành hình vuông hoàn chỉnh: Mảnh 1 + 2 + 4 và Mảnh 3 + 4 + 5.
+</details>
 
 ---
 
