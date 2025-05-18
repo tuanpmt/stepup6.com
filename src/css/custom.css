@@ -1,0 +1,225 @@
+/**
+ * Mintlify Theme for Docusaurus
+ * A theme inspired by the Mintlify documentation style
+ */
+
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Root variables */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Dark mode overrides */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Mintlify-style Sidebar */
+.menu {
+  padding: 0 !important;
+  font-size: 0.9rem;
+}
+
+.menu__list {
+  margin-bottom: 1.2rem;
+}
+
+.menu__list-item {
+  margin: 0.2rem 0;
+}
+
+.menu__link {
+  border-radius: 0;
+  padding: 0.5rem 0.8rem;
+  transition: background-color 0.2s ease;
+}
+
+.menu__link--active {
+  font-weight: 600;
+}
+
+.menu__list-item-collapsible {
+  border-radius: 0;
+  padding: 0;
+}
+
+.menu__list-item-collapsible--active {
+  background: transparent;
+}
+
+.menu__link:hover, 
+.menu__list-item-collapsible:hover {
+  background-color: transparent;
+}
+
+[data-theme='dark'] .menu__link:hover,
+[data-theme='dark'] .menu__list-item-collapsible:hover {
+  background-color: transparent;
+}
+
+/* Improve Category List Styling */
+.menu__list-item-collapsible .menu__link {
+  flex: 1;
+  font-weight: 600;
+  padding-left: 0.8rem;
+}
+
+.menu__list .menu__list {
+  margin-left: 0.7rem;
+  margin-top: 0.2rem;
+  padding-left: 0;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Thêm hiệu ứng cho từng menu item khi hover */
+.menu__list .menu__list .menu__link {
+  padding: 0.35rem 0.8rem;
+  font-weight: normal;
+  position: relative;
+}
+
+/* Align nested collapsible items with their siblings */
+.menu__list .menu__list .menu__list-item-collapsible {
+  padding: 0;
+}
+
+.menu__list .menu__list .menu__list-item-collapsible .menu__link {
+  padding: 0.35rem 0.8rem;
+  font-weight: normal;
+  position: relative;
+}
+
+/* Remove the icon for all collapsible items to ensure alignment */
+.menu__list-item-collapsible::before {
+  display: none;
+}
+
+/* Main container styling */
+.container {
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 997px) {
+  .menu {
+    padding: 2rem 0 !important;
+  }
+  
+  /* Ensure top-level menu items align with left edge */
+  .menu > .menu__list > .menu__list-item > .menu__link,
+  .menu > .menu__list > .menu__list-item > .menu__list-item-collapsible {
+    padding-left: 0;
+    border-radius: 0;
+  }
+  
+  /* Make sure the text of collapsible items aligns with non-collapsible items */
+  .menu > .menu__list > .menu__list-item > .menu__list-item-collapsible .menu__link {
+    padding-left: 0.8rem;
+  }
+  
+  /* Ensure regular links at the top level are aligned the same as collapsible items */
+  .menu > .menu__list > .menu__list-item > .menu__link {
+    padding-left: 0.8rem;
+  }
+  
+  /* Fix positioning of collapse icons */
+  .menu__list-item-collapsible .menu__caret:before,
+  .menu__list-item-collapsible .menu__link--sublist-caret:after {
+    right: 0.5rem;
+  }
+}
+
+/* Điều chỉnh hover cho toàn bộ khu vực menu item */
+.menu__list .menu__list .menu__list-item {
+  position: relative;
+}
+
+.menu__list .menu__list .menu__list-item:hover::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--ifm-color-primary);
+  animation: brightGlow 0.3s ease-in-out forwards;
+}
+
+@keyframes brightGlow {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Smooth transitions for interactive elements */
+.menu__link, 
+.menu__list-item-collapsible {
+  transition: all 0.2s ease;
+}
+
+/* Improve the category toggle icon */
+.menu__caret:before,
+.menu__link--sublist-caret:after {
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.menu__list-item-collapsible:hover .menu__caret:before,
+.menu__list-item-collapsible:hover .menu__link--sublist-caret:after {
+  opacity: 0.9;
+}
+
+/* Add subtle spacing between major sections */
+.menu > .menu__list > .menu__list-item {
+  margin-bottom: 0.5rem;
+}
+
+/* Make active category stand out a bit more */
+.menu__list-item-collapsible--active {
+  background-color: transparent;
+}
+
+[data-theme='dark'] .menu__list-item-collapsible--active {
+  background-color: transparent;
+}
+
+/* Enhance active menu item with left border and subtle shadow */
+.menu__link--active:not(.menu__link--sublist) {
+  border-left: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: none;
+  padding-left: 0.8rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  border-radius: 0;
+}
+
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.menu__list .menu__list .menu__list-item .menu__link--active::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--ifm-color-primary);
+} 
