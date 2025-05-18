@@ -6,6 +6,7 @@ HƯỚNG DẪN CHUNG:
 - Ưu tiên các giải thích dễ hiểu cho học sinh THCS
 - Đảm bảo nội dung phù hợp với chương trình THCS và chuẩn bị thi vào trường chuyên
 - Nội dung tiếng Việt 
+- Dùng mermaid để tạo biểu đồ, sơ đồ, flowchart, vẽ svg trong thư mục static/img khi cần thiết
 
 QUY TẮC KỸ THUẬT:
 - Sử dụng .mdx thay vì .md cho tất cả tài liệu

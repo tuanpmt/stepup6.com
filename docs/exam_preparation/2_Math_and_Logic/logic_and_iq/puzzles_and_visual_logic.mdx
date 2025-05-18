@@ -1,0 +1,249 @@
+---
+sidebar_position: 2
+title: 'Câu đố và tư duy hình ảnh'
+description: 'Giải quyết các bài toán về tư duy không gian, hình ảnh và câu đố logic trong đề thi.'
+---
+
+# Câu đố và tư duy hình ảnh
+
+Phần thi về câu đố và tư duy hình ảnh đánh giá khả năng nhận diện quy luật hình học, nhận thức không gian và xử lý thông tin trực quan của học sinh - những kỹ năng rất quan trọng trong kỳ thi vào lớp 6 THCS chuyên.
+
+## 1. Tầm quan trọng của tư duy hình ảnh
+
+- **Rèn luyện trí tưởng tượng không gian** - một dạng thông minh đặc biệt
+- **Phát triển khả năng nhận diện mẫu và quy luật** trực quan
+- **Tăng cường khả năng phân tích và tổng hợp thông tin** hình ảnh
+- **Bồi dưỡng trí tuệ đa chiều** vượt ra ngoài tư duy số học thuần túy
+
+```mermaid
+mindmap
+  root((Tư duy hình ảnh))
+    Nhận diện mẫu
+      Quy luật hình học
+      Chuỗi hình
+    Tư duy không gian
+      Xoay vật thể
+      Gập hình
+    Phân tích hình ảnh
+      Đếm hình
+      Phân loại
+    Tổng hợp thông tin
+      Lắp ghép hình
+      Hoàn thiện mẫu
+```
+
+## 2. Các dạng bài toán tư duy hình ảnh thường gặp
+
+### 2.1. Đếm hình
+
+**Đặc điểm**:
+- Yêu cầu đếm số lượng hình cụ thể (hình vuông, hình tam giác, đường thẳng...) trong một hình vẽ phức tạp
+- Hình thường được thiết kế để có nhiều cách đếm và dễ bỏ sót
+
+**Ví dụ**:  
+Đếm tổng số hình vuông trong hình vẽ sau:
+
+![Lưới hình vuông 3x3](/img/logic_and_iq/square_grid.svg)
+
+**Chiến lược giải**:
+1. Phân loại các hình theo kích thước (1×1, 2×2, 3×3)
+2. Đếm có hệ thống theo từng loại
+3. Tổng hợp kết quả
+
+```mermaid
+graph TD
+    A[Đếm hình vuông] --> B[Bước 1: Phân loại theo kích thước]
+    B --> C[Hình vuông 1x1]
+    B --> D[Hình vuông 2x2]
+    B --> E[Hình vuông 3x3]
+    C --> F[Đếm: 9 hình]
+    D --> G[Đếm: 4 hình]
+    E --> H[Đếm: 1 hình]
+    F --> I[Tổng hợp kết quả]
+    G --> I
+    H --> I
+    I --> J[Tổng cộng: 14 hình vuông]
+```
+
+> Đáp án: 14 hình vuông (9 hình vuông 1×1, 4 hình vuông 2×2, 1 hình vuông 3×3)
+
+### 2.2. Xoay hình, gập hình
+
+**Đặc điểm**:
+- Yêu cầu dự đoán kết quả sau khi xoay, gập, lật một hình
+- Thường đòi hỏi học sinh hình dung các vật thể trong không gian 
+
+**Ví dụ**:  
+Hình nào sẽ xuất hiện khi gập mạng lưới này thành hình lập phương?
+
+```mermaid
+graph TD
+    A[Mạng lưới phẳng] --> B[Xác định vị trí tương đối]
+    B --> C[Theo dõi các cạnh kề nhau]
+    C --> D[Hình dung quá trình gập]
+    D --> E[Xác định kết quả cuối cùng]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bbf,stroke:#333,stroke-width:2px
+```
+
+**Chiến lược giải**:
+1. Quan sát mối quan hệ giữa các mặt
+2. Đánh dấu/ghi nhớ vị trí các điểm đặc biệt
+3. Mô phỏng quá trình gập hình trong tư duy
+
+### 2.3. Tìm hình khác biệt (Odd one out)
+
+**Đặc điểm**:
+- Cho một nhóm hình và yêu cầu tìm hình không phù hợp với quy luật chung
+- Các tiêu chí để phân biệt có thể là: số lượng, hình dạng, màu sắc, hướng, đối xứng...
+
+**Ví dụ**:  
+Tìm hình khác biệt trong dãy sau:
+🔺 🔺 🔻 🔺 🔺
+
+**Chiến lược giải**:
+1. Xác định các thuộc tính có thể so sánh
+2. Tìm quy luật chiếm đa số
+3. Xác định hình vi phạm quy luật đó
+
+### 2.4. Tiếp tục dãy hình
+
+**Đặc điểm**:
+- Cho một dãy hình và yêu cầu xác định hình tiếp theo
+- Quy luật có thể liên quan đến sự thay đổi về vị trí, hướng, hình dạng, số lượng...
+
+**Ví dụ**:  
+Tìm hình tiếp theo trong dãy:
+
+![Dãy hình tìm quy luật](/img/logic_and_iq/pattern_sequence.svg)
+
+```mermaid
+flowchart LR
+    A[◯] --> B[◯◯]
+    B --> C[◯◯◯]
+    C --> D[◯◯◯◯]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style D fill:#bbf,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
+```
+
+**Chiến lược giải**:
+1. Quan sát sự thay đổi giữa các hình liên tiếp
+2. Tìm quy luật cho sự thay đổi đó
+3. Áp dụng quy luật để xác định hình tiếp theo
+
+### 2.5. Lắp ghép hình
+
+**Đặc điểm**:
+- Yêu cầu xác định bằng cách nào có thể lắp ghép các hình cho trước để tạo thành hình mục tiêu
+- Đòi hỏi khả năng tưởng tượng không gian và khả năng biến đổi hình ảnh trong tâm trí
+
+**Chiến lược giải**:
+1. Quan sát kỹ hình mục tiêu
+2. Phân tích các mảnh ghép, có thể cần xoay hoặc lật
+3. Thử ghép từng mảnh vào vị trí phù hợp
+
+## 3. Phương pháp giải quyết bài toán tư duy hình ảnh
+
+### 3.1. Phương pháp chia để trị
+
+```mermaid
+graph TD
+    A[Bài toán phức tạp] --> B[Chia thành các phần đơn giản]
+    B --> C[Phần 1]
+    B --> D[Phần 2]
+    B --> E[Phần 3]
+    C --> F[Giải quyết phần 1]
+    D --> G[Giải quyết phần 2]
+    E --> H[Giải quyết phần 3]
+    F --> I[Tổng hợp giải pháp]
+    G --> I
+    H --> I
+    I --> J[Kết quả cuối cùng]
+    
+    style A fill:#f96,stroke:#333,stroke-width:2px
+    style J fill:#6f9,stroke:#333,stroke-width:2px
+```
+
+1. **Phân tích hình thành các thành phần đơn giản hơn**
+2. **Xử lý từng thành phần riêng biệt**
+3. **Tổng hợp kết quả để có câu trả lời cuối cùng**
+
+### 3.2. Phương pháp loại trừ
+
+1. **Xác định các thuộc tính cần xem xét**
+2. **Kiểm tra từng phương án có thể**
+3. **Loại bỏ các phương án không phù hợp**
+4. **Xác định phương án còn lại là đáp án**
+
+### 3.3. Phương pháp tìm quy luật
+
+1. **Quan sát kỹ xu hướng thay đổi trong dãy hình**
+2. **Thử áp dụng các quy luật phổ biến**:
+   - Xoay: 45°, 90°, 180°...
+   - Đối xứng: trái-phải, trên-dưới
+   - Tăng/giảm số lượng các phần tử
+   - Kết hợp/phân tách các phần tử
+3. **Kiểm chứng quy luật trên tất cả các hình đã cho**
+
+### 3.4. Phát triển trực giác hình ảnh
+
+- **Luyện tập đều đặn** với nhiều dạng bài khác nhau
+- **Vẽ ra giấy** để kiểm chứng suy nghĩ
+- **Sử dụng mô hình thực tế** (như mô hình giấy) nếu cần
+
+## 4. Chiến lược làm bài thi
+
+```mermaid
+flowchart TB
+    A[Đọc kỹ yêu cầu đề bài] --> B[Quan sát chi tiết trong hình]
+    B --> C[Tìm đặc điểm nổi bật/khác biệt]
+    C --> D[Ghi chú hoặc đánh dấu]
+    D --> E[Áp dụng phương pháp phù hợp]
+    E --> F[Kiểm tra đáp án]
+    F -->|Chưa thỏa mãn| B
+    F -->|Thỏa mãn| G[Hoàn thành]
+    
+    style A fill:#f99,stroke:#333,stroke-width:2px
+    style G fill:#9f9,stroke:#333,stroke-width:2px
+```
+
+1. **Đọc kỹ yêu cầu đề bài**
+2. **Quan sát cẩn thận tất cả chi tiết** trong hình
+3. **Tìm kiếm các đặc điểm nổi bật hoặc khác biệt**
+4. **Ghi chú hoặc đánh dấu** trực tiếp trên hình (nếu được phép)
+5. **Kiểm tra đáp án với tất cả các điều kiện** của bài toán
+
+## 5. Bài tập thực hành
+
+### Bài tập 1: Đếm hình
+Đếm số hình tam giác trong hình vẽ:
+
+![Đếm hình tam giác](/img/logic_and_iq/triangle_example.svg)
+
+### Bài tập 2: Tìm quy luật
+Tìm hình tiếp theo trong dãy:
+
+![Tìm quy luật dãy hình](/img/logic_and_iq/pattern_sequence.svg)
+
+### Bài tập 3: Tìm hình khác biệt
+Tìm hình khác với nhóm:
+
+![Tìm hình khác biệt](/img/logic_and_iq/odd_one_out.svg)
+
+### Bài tập 4: Gập hình
+Khi gập tờ giấy có hình vẽ ⬤ trên góc trái, sẽ được hình nào trong các hình sau?
+
+![Bài toán gập hình](/img/logic_and_iq/paper_folding.svg)
+
+### Bài tập 5: Lắp ghép hình
+Ba mảnh ghép nào dưới đây có thể ghép lại thành hình vuông hoàn chỉnh?
+
+![Bài toán lắp ghép hình](/img/logic_and_iq/puzzle_pieces.svg)
+
+---
+
+Rèn luyện tư duy hình ảnh không chỉ giúp học sinh vượt qua kỳ thi vào THCS chuyên mà còn phát triển trí tuệ không gian - một kỹ năng quan trọng trong nhiều lĩnh vực như toán học, khoa học, nghệ thuật và thiết kế sau này. 

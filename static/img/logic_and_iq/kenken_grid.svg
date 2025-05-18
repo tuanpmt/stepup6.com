@@ -1,0 +1,53 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Đường viền lưới -->
+  <rect x="20" y="20" width="260" height="260" fill="none" stroke="black" stroke-width="3"/>
+  
+  <!-- Các đường kẻ ngang cho lưới 4x4 -->
+  <line x1="20" y1="85" x2="280" y2="85" stroke="black" stroke-width="1"/>
+  <line x1="20" y1="150" x2="280" y2="150" stroke="black" stroke-width="1"/>
+  <line x1="20" y1="215" x2="280" y2="215" stroke="black" stroke-width="1"/>
+  
+  <!-- Các đường kẻ dọc cho lưới 4x4 -->
+  <line x1="85" y1="20" x2="85" y2="280" stroke="black" stroke-width="1"/>
+  <line x1="150" y1="20" x2="150" y2="280" stroke="black" stroke-width="1"/>
+  <line x1="215" y1="20" x2="215" y2="280" stroke="black" stroke-width="1"/>
+  
+  <!-- Đường viền các khu vực -->
+  <!-- Khu vực A -->
+  <rect x="20" y="20" width="130" height="65" fill="none" stroke="black" stroke-width="3"/>
+  <!-- Khu vực B -->
+  <path d="M 150 20 L 215 20 L 215 85 L 150 85 L 150 150 L 85 150 L 85 85 L 150 85 Z" fill="none" stroke="black" stroke-width="3"/>
+  <!-- Khu vực C -->
+  <rect x="215" y="20" width="65" height="130" fill="none" stroke="black" stroke-width="3"/>
+  <!-- Khu vực D -->
+  <rect x="20" y="85" width="65" height="130" fill="none" stroke="black" stroke-width="3"/>
+  <!-- Khu vực E -->
+  <rect x="85" y="150" width="65" height="130" fill="none" stroke="black" stroke-width="3"/>
+  <!-- Khu vực F -->
+  <rect x="150" y="150" width="130" height="65" fill="none" stroke="black" stroke-width="3"/>
+  <!-- Khu vực G -->
+  <rect x="20" y="215" width="65" height="65" fill="none" stroke="black" stroke-width="3"/>
+  <!-- Khu vực H -->
+  <rect x="150" y="215" width="130" height="65" fill="none" stroke="black" stroke-width="3"/>
+  
+  <!-- Nhãn cho các khu vực -->
+  <text x="35" y="40" font-family="Arial" font-size="16">A</text>
+  <text x="100" y="40" font-family="Arial" font-size="16">A</text>
+  <text x="165" y="40" font-family="Arial" font-size="16">B</text>
+  <text x="230" y="40" font-family="Arial" font-size="16">C</text>
+  
+  <text x="35" y="105" font-family="Arial" font-size="16">D</text>
+  <text x="100" y="105" font-family="Arial" font-size="16">B</text>
+  <text x="165" y="105" font-family="Arial" font-size="16">B</text>
+  <text x="230" y="105" font-family="Arial" font-size="16">C</text>
+  
+  <text x="35" y="170" font-family="Arial" font-size="16">D</text>
+  <text x="100" y="170" font-family="Arial" font-size="16">E</text>
+  <text x="165" y="170" font-family="Arial" font-size="16">F</text>
+  <text x="230" y="170" font-family="Arial" font-size="16">F</text>
+  
+  <text x="35" y="235" font-family="Arial" font-size="16">G</text>
+  <text x="100" y="235" font-family="Arial" font-size="16">E</text>
+  <text x="165" y="235" font-family="Arial" font-size="16">H</text>
+  <text x="230" y="235" font-family="Arial" font-size="16">H</text>
+</svg> 

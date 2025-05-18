@@ -1,0 +1,31 @@
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tiêu đề -->
+  <text x="300" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Tìm hình khác biệt</text>
+  
+  <!-- Hình A: Tam giác đặc đều hướng lên -->
+  <g transform="translate(100, 120)">
+    <polygon points="0,50 50,-40 100,50" fill="black" stroke="black" stroke-width="2"/>
+    <text x="50" y="90" font-family="Arial" font-size="18" text-anchor="middle">A. ▲</text>
+  </g>
+  
+  <!-- Hình B: Tam giác rỗng hướng lên -->
+  <g transform="translate(250, 120)">
+    <polygon points="0,50 50,-40 100,50" fill="none" stroke="black" stroke-width="2"/>
+    <text x="50" y="90" font-family="Arial" font-size="18" text-anchor="middle">B. △</text>
+  </g>
+  
+  <!-- Hình C: Tam giác rỗng hướng xuống -->
+  <g transform="translate(400, 120)">
+    <polygon points="0,-40 50,50 100,-40" fill="none" stroke="black" stroke-width="2"/>
+    <text x="50" y="90" font-family="Arial" font-size="18" text-anchor="middle">C. ▽</text>
+  </g>
+  
+  <!-- Hình D: Hình mũi tên -->
+  <g transform="translate(550, 120)">
+    <path d="M 0,0 L 0,50 L 70,50 L 70,75 L 100,25 L 70,-25 L 70,0 Z" fill="none" stroke="black" stroke-width="2"/>
+    <text x="50" y="90" font-family="Arial" font-size="18" text-anchor="middle">D. ◮</text>
+  </g>
+  
+  <!-- Chú thích - đã di chuyển xuống dưới để không bị đè -->
+  <text x="300" y="230" font-family="Arial" font-size="16" text-anchor="middle">Hãy tìm hình không phù hợp với nhóm</text>
+</svg> 

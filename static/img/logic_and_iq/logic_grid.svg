@@ -1,0 +1,42 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tiêu đề -->
+  <text x="200" y="30" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Bảng Logic</text>
+
+  <!-- Cột đầu tiên: Tên -->
+  <text x="50" y="85" font-family="Arial" font-size="16" text-anchor="middle">An</text>
+  <text x="50" y="155" font-family="Arial" font-size="16" text-anchor="middle">Bình</text>
+  <text x="50" y="225" font-family="Arial" font-size="16" text-anchor="middle">Châu</text>
+
+  <!-- Dòng đầu: Môn học -->
+  <text x="150" y="60" font-family="Arial" font-size="16" text-anchor="middle">Toán</text>
+  <text x="250" y="60" font-family="Arial" font-size="16" text-anchor="middle">Văn</text>
+  <text x="350" y="60" font-family="Arial" font-size="16" text-anchor="middle">Anh</text>
+
+  <!-- Đường viền lưới -->
+  <rect x="100" y="70" width="250" height="170" fill="none" stroke="black" stroke-width="2"/>
+
+  <!-- Đường kẻ ngang -->
+  <line x1="100" y1="120" x2="350" y2="120" stroke="black" stroke-width="1"/>
+  <line x1="100" y1="190" x2="350" y2="190" stroke="black" stroke-width="1"/>
+
+  <!-- Đường kẻ dọc -->
+  <line x1="180" y1="70" x2="180" y2="240" stroke="black" stroke-width="1"/>
+  <line x1="270" y1="70" x2="270" y2="240" stroke="black" stroke-width="1"/>
+
+  <!-- Các đánh dấu -->
+  <!-- An không thích môn Văn -->
+  <text x="225" y="95" font-family="Arial" font-size="24" text-anchor="middle" fill="red">✗</text>
+  <!-- An thích Toán -->
+  <text x="140" y="95" font-family="Arial" font-size="24" text-anchor="middle" fill="green">✓</text>
+  <!-- Bình thích Văn -->
+  <text x="225" y="155" font-family="Arial" font-size="24" text-anchor="middle" fill="green">✓</text>
+  <!-- Châu thích Anh -->
+  <text x="315" y="225" font-family="Arial" font-size="24" text-anchor="middle" fill="green">✓</text>
+  
+  <!-- Loại trừ -->
+  <text x="140" y="155" font-family="Arial" font-size="24" text-anchor="middle" fill="red">✗</text>
+  <text x="140" y="225" font-family="Arial" font-size="24" text-anchor="middle" fill="red">✗</text>
+  <text x="225" y="225" font-family="Arial" font-size="24" text-anchor="middle" fill="red">✗</text>
+  <text x="315" y="95" font-family="Arial" font-size="24" text-anchor="middle" fill="red">✗</text>
+  <text x="315" y="155" font-family="Arial" font-size="24" text-anchor="middle" fill="red">✗</text>
+</svg> 
