@@ -1,0 +1,138 @@
+---
+title: 'Bài Tập Luyện Tập - Dạng Bài 1 (Đề TĐN 2024)'
+description: 'Các bài tập tương tự và luyện tập cho dạng toán số học, chia hết, và nguyên lý bù trừ.'
+---
+
+# Luyện tập: Dạng Toán Đếm và Chia Hết
+
+Các bài tập dưới đây có dạng tương tự như Bài 1 trong đề thi Toán & Tư duy Logic vào lớp 6 trường THCS & THPT Trần Đại Nghĩa (khóa ngày 04/07/2024).
+
+#### Bài 1.1: Lớp học và Câu lạc bộ
+
+Một lớp học có 40 học sinh. Có 25 học sinh tham gia câu lạc bộ Toán và 20 học sinh tham gia câu lạc bộ Tiếng Anh. Biết rằng có 10 học sinh tham gia cả hai câu lạc bộ.
+
+a) Có bao nhiêu học sinh chỉ tham gia câu lạc bộ Toán?
+b) Có bao nhiêu học sinh tham gia ít nhất một câu lạc bộ?
+c) Có bao nhiêu học sinh không tham gia câu lạc bộ nào?
+
+<details>
+<summary>Hướng dẫn giải Bài 1.1</summary>
+
+**Phân tích:**
+- Tổng số học sinh: 40
+- Số HS tham gia CLB Toán (T): 25
+- Số HS tham gia CLB Tiếng Anh (A): 20
+- Số HS tham gia cả hai CLB (T ∩ A): 10
+
+**a) Số học sinh chỉ tham gia câu lạc bộ Toán:**
+Số học sinh chỉ tham gia CLB Toán bằng số học sinh tham gia CLB Toán trừ đi số học sinh tham gia cả hai CLB.
+`25 (Toán) - 10 (Cả hai) = 15` học sinh.
+
+**b) Số học sinh tham gia ít nhất một câu lạc bộ:**
+Sử dụng nguyên lý bù trừ:
+Số HS tham gia ít nhất một CLB = (Số HS tham gia Toán) + (Số HS tham gia Tiếng Anh) - (Số HS tham gia cả hai)
+`= 25 + 20 - 10 = 35` học sinh.
+
+**c) Số học sinh không tham gia câu lạc bộ nào:**
+Số học sinh không tham gia CLB nào bằng tổng số học sinh trừ đi số học sinh tham gia ít nhất một CLB.
+`40 (Tổng số) - 35 (Ít nhất một CLB) = 5` học sinh.
+
+**Đáp án:**
+a) 15 học sinh
+b) 35 học sinh
+c) 5 học sinh
+</details>
+
+---
+
+#### Bài 1.2: Các cuốn sách trên giá
+
+Trên một giá sách có 150 cuốn sách được đánh số từ 1 đến 150.
+Người ta lấy xuống các cuốn sách có số thứ tự chia hết cho 4.
+Sau đó, người ta lại lấy xuống thêm các cuốn sách có số thứ tự chia hết cho 6 từ những cuốn còn lại trên giá.
+
+a) Có bao nhiêu cuốn sách được lấy xuống ở lần đầu tiên?
+b) Sau hai lần lấy, có bao nhiêu cuốn sách đã được lấy xuống?
+c) Có bao nhiêu cuốn sách còn lại trên giá?
+
+<details>
+<summary>Hướng dẫn giải Bài 1.2</summary>
+
+**Phân tích:**
+- Tổng số sách: 150
+- Lần 1: Lấy sách chia hết cho 4.
+- Lần 2: Lấy sách chia hết cho 6 (từ những cuốn còn lại).
+
+**a) Số cuốn sách được lấy xuống ở lần đầu tiên (chia hết cho 4):**
+Số cuốn sách chia hết cho 4 từ 1 đến 150 là:
+`floor(150 / 4) = 37` cuốn.
+
+**b) Sau hai lần lấy, có bao nhiêu cuốn sách đã được lấy xuống?**
+- Sách lấy lần 1 (chia hết cho 4): 37 cuốn.
+- Sách lấy lần 2 (chia hết cho 6):
+    - Tìm số sách chia hết cho 6: `floor(150 / 6) = 25` cuốn.
+    - Tìm số sách chia hết cho cả 4 và 6 (tức chia hết cho BCNN(4,6) = 12): `floor(150 / 12) = 12` cuốn.
+    - Số sách chỉ chia hết cho 6 (mà không chia hết cho 4, tức là số sách thực sự được lấy thêm ở lần 2): `25 - 12 = 13` cuốn.
+- Tổng số sách đã được lấy xuống: `37 (lần 1) + 13 (lần 2) = 50` cuốn.
+
+**c) Có bao nhiêu cuốn sách còn lại trên giá?**
+Số sách còn lại = Tổng số sách - Số sách đã lấy xuống
+`150 - 50 = 100` cuốn.
+
+**Đáp án:**
+a) 37 cuốn
+b) 50 cuốn
+c) 100 cuốn
+</details>
+
+---
+
+#### Bài 1.3: Sơn các viên bi
+
+Có 200 viên bi giống hệt nhau được đánh số từ 1 đến 200.
+Đầu tiên, tất cả các viên bi đều màu trắng.
+- Bước 1: Sơn đỏ tất cả các viên bi có số chia hết cho 2.
+- Bước 2: Sơn xanh (đè lên màu cũ nếu có) tất cả các viên bi có số chia hết cho 5.
+
+Hỏi sau hai bước sơn:
+a) Có bao nhiêu viên bi được sơn ít nhất một lần?
+b) Có bao nhiêu viên bi có cả màu đỏ và màu xanh (tức màu thực tế có thể là tím hoặc hỗn hợp)?
+c) Có bao nhiêu viên bi chỉ có màu đỏ?
+d) Có bao nhiêu viên bi vẫn còn màu trắng?
+
+<details>
+<summary>Hướng dẫn giải Bài 1.3</summary>
+
+**Phân tích:**
+- Tổng số bi: 200
+- Bước 1: Sơn đỏ nếu chia hết cho 2.
+- Bước 2: Sơn xanh nếu chia hết cho 5.
+
+**a) Có bao nhiêu viên bi được sơn ít nhất một lần?**
+Đây là số viên bi chia hết cho 2 hoặc chia hết cho 5.
+- Số bi chia hết cho 2 (Đỏ): `floor(200 / 2) = 100` viên.
+- Số bi chia hết cho 5 (Xanh): `floor(200 / 5) = 40` viên.
+- Số bi chia hết cho cả 2 và 5 (chia hết cho 10, có cả hai màu): `floor(200 / 10) = 20` viên.
+Số bi được sơn ít nhất một lần = (Số bi đỏ) + (Số bi xanh) - (Số bi có cả hai màu)
+`= 100 + 40 - 20 = 120` viên.
+
+**b) Có bao nhiêu viên bi có cả màu đỏ và màu xanh?**
+Đây là số viên bi chia hết cho cả 2 và 5, tức là chia hết cho 10.
+`floor(200 / 10) = 20` viên.
+
+**c) Có bao nhiêu viên bi chỉ có màu đỏ?**
+Đây là số viên bi chia hết cho 2 nhưng không chia hết cho 5.
+Số bi chỉ có màu đỏ = (Số bi chia hết cho 2) - (Số bi chia hết cho cả 2 và 5)
+`= 100 - 20 = 80` viên.
+
+**d) Có bao nhiêu viên bi vẫn còn màu trắng?**
+Đây là số viên bi không được sơn lần nào.
+Số bi trắng = Tổng số bi - Số bi được sơn ít nhất một lần
+`= 200 - 120 = 80` viên.
+
+**Đáp án:**
+a) 120 viên
+b) 20 viên
+c) 80 viên
+d) 80 viên
+</details> 
